@@ -1,7 +1,7 @@
 # mplanet32
 Magnetic Planet 32
 
-A remake of the game engine of the shareware-game Magnetic Planet by KIWI from 1996.
+A remake of the game engine of the shareware-game Magnetic Planet by KIWI in 1996 by using their Qpop-Engine.
 The game runs now on modern Windows, and supports translations and local (Hotseat) multiplayer gameplay. 
 
 To play the game, get the files in mplanet32, and run the MPLANET32.EXE.
@@ -10,6 +10,10 @@ Note, the files from the original (including the old executeble MPLANET.EXE - a 
 The subdirectory mplanet32 contains the new Executable (MPLANET32.EXE) and language files together with the old game.
 The subdirectory src contains the source code to build the MPLANET32.EXE.
 
+License:
+* The original game files are shareware, and can be redistributed, but should not be used commercial.
+* The HQX-library is under GNU-LGPL, the modified source code is linked.
+* The MIDI-decoder is public domain (and in the download package for the engine).
 
 Credits:
 
@@ -29,6 +33,11 @@ MAGNETIC PLANET 32 (Version 1.0) for WIN32
     Maxim Stepin;  Cameron Zemek;  Francois Gannaz
      - under LGPL\n - Source Code comes with Game
    MIDI-Decoder for Windows:\nBased on Public Domain Code by David J. Rager
+
+
+Links:
+https://www.frunit.de/qpop/ - Q-Pop fanpage (in German)
+https://qpop.fandom.com/de/wiki/Q-Pop_und_Magnetic_Planet_Wiki - Q-Pop and Magnetic Planet Wiki (in German)
 
 
    
