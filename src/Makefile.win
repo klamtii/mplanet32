@@ -1,0 +1,90 @@
+# Project: MPLANET32
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe -D__DEBUG__
+CC   = gcc.exe -D__DEBUG__
+WINDRES = windres.exe
+RES  = 
+OBJ  = WINLOAD.o MULTIPLEX.o WINMIDI.o WINGRAF.o TEST.o RANDOM.o WINWAV.o BMCACHE.o MPLOAD.o WELT.o MPDATEN.o SAMMEL.o AUSWAHL.o MENUE.o GUI.o EVOL.o STRINGS.o BEWERT.o WINFILE.o MAIN.o NEWGAME.o $(RES)
+LINKOBJ  = WINLOAD.o MULTIPLEX.o WINMIDI.o WINGRAF.o TEST.o RANDOM.o WINWAV.o BMCACHE.o MPLOAD.o WELT.o MPDATEN.o SAMMEL.o AUSWAHL.o MENUE.o GUI.o EVOL.o STRINGS.o BEWERT.o WINFILE.o MAIN.o NEWGAME.o $(RES)
+LIBS =  -L"I:/DEVC/lib" ../../DEVC/lib/liblz32.a ../../DEVC/lib/libgdi32.a ../../DEVC/lib/libwinmm.a hqx.a ../../DEVC/lib/libcomdlg32.a  -g3 
+INCS =  -I"I:/DEVC/include" 
+CXXINCS =  -I"I:/DEVC/lib/gcc/mingw32/3.4.2/include"  -I"I:/DEVC/include/c++/3.4.2/backward"  -I"I:/DEVC/include/c++/3.4.2/mingw32"  -I"I:/DEVC/include/c++/3.4.2"  -I"I:/DEVC/include" 
+BIN  = MPLAN32.EXE
+CXXFLAGS = $(CXXINCS)   -fexpensive-optimizations -O2 -g3
+CFLAGS = $(INCS)   -fexpensive-optimizations -O2 -g3
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before MPLAN32.EXE all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o "MPLAN32.EXE" $(LIBS)
+
+WINLOAD.o: WINLOAD.C
+	$(CC) -x c -c WINLOAD.C -o WINLOAD.o $(CFLAGS)
+
+MULTIPLEX.o: MULTIPLEX.C
+	$(CC) -x c -c MULTIPLEX.C -o MULTIPLEX.o $(CFLAGS)
+
+WINMIDI.o: WINMIDI.C
+	$(CC) -x c -c WINMIDI.C -o WINMIDI.o $(CFLAGS)
+
+WINGRAF.o: WINGRAF.C
+	$(CC) -x c -c WINGRAF.C -o WINGRAF.o $(CFLAGS)
+
+TEST.o: TEST.C
+	$(CC) -x c -c TEST.C -o TEST.o $(CFLAGS)
+
+RANDOM.o: RANDOM.C
+	$(CC) -x c -c RANDOM.C -o RANDOM.o $(CFLAGS)
+
+WINWAV.o: WINWAV.C
+	$(CC) -x c -c WINWAV.C -o WINWAV.o $(CFLAGS)
+
+BMCACHE.o: BMCACHE.C
+	$(CC) -x c -c BMCACHE.C -o BMCACHE.o $(CFLAGS)
+
+MPLOAD.o: MPLOAD.C
+	$(CC) -x c -c MPLOAD.C -o MPLOAD.o $(CFLAGS)
+
+WELT.o: WELT.C
+	$(CC) -x c -c WELT.C -o WELT.o $(CFLAGS)
+
+MPDATEN.o: MPDATEN.C
+	$(CC) -x c -c MPDATEN.C -o MPDATEN.o $(CFLAGS)
+
+SAMMEL.o: SAMMEL.C
+	$(CC) -x c -c SAMMEL.C -o SAMMEL.o $(CFLAGS)
+
+AUSWAHL.o: AUSWAHL.C
+	$(CC) -x c -c AUSWAHL.C -o AUSWAHL.o $(CFLAGS)
+
+MENUE.o: MENUE.C
+	$(CC) -x c -c MENUE.C -o MENUE.o $(CFLAGS)
+
+GUI.o: GUI.C
+	$(CC) -x c -c GUI.C -o GUI.o $(CFLAGS)
+
+EVOL.o: EVOL.C
+	$(CC) -x c -c EVOL.C -o EVOL.o $(CFLAGS)
+
+STRINGS.o: STRINGS.C
+	$(CC) -x c -c STRINGS.C -o STRINGS.o $(CFLAGS)
+
+BEWERT.o: BEWERT.C
+	$(CC) -x c -c BEWERT.C -o BEWERT.o $(CFLAGS)
+
+WINFILE.o: WINFILE.C
+	$(CC) -x c -c WINFILE.C -o WINFILE.o $(CFLAGS)
+
+MAIN.o: MAIN.C
+	$(CC) -x c -c MAIN.C -o MAIN.o $(CFLAGS)
+
+NEWGAME.o: NEWGAME.C
+	$(CC) -x c -c NEWGAME.C -o NEWGAME.o $(CFLAGS)

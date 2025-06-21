@@ -1,0 +1,40 @@
+# Project: hqx
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = hq2x.o hq3x.o hq4x.o init.o $(RES)
+LINKOBJ  = hq2x.o hq3x.o hq4x.o init.o $(RES)
+LIBS =  -L"I:/DEVC/lib"  
+INCS =  -I"I:/DEVC/include" 
+CXXINCS =  -I"I:/DEVC/lib/gcc/mingw32/3.4.2/include"  -I"I:/DEVC/include/c++/3.4.2/backward"  -I"I:/DEVC/include/c++/3.4.2/mingw32"  -I"I:/DEVC/include/c++/3.4.2"  -I"I:/DEVC/include" 
+BIN  = hqx.a
+CXXFLAGS = $(CXXINCS)   -fexpensive-optimizations -O1
+CFLAGS = $(INCS)   -fexpensive-optimizations -O1
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before hqx.a all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(LINKOBJ)
+	ar r $(BIN) $(LINKOBJ)
+	ranlib $(BIN)
+
+hq2x.o: hq2x.c
+	$(CC) -x c -c hq2x.c -o hq2x.o $(CFLAGS)
+
+hq3x.o: hq3x.c
+	$(CC) -x c -c hq3x.c -o hq3x.o $(CFLAGS)
+
+hq4x.o: hq4x.c
+	$(CC) -x c -c hq4x.c -o hq4x.o $(CFLAGS)
+
+init.o: init.c
+	$(CC) -x c -c init.c -o init.o $(CFLAGS)
