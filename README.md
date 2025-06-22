@@ -37,6 +37,7 @@ MAGNETIC PLANET 32 (Version 1.0) for WIN32
 
 
 * Links:<br>
+ https://klamtii.itch.io/magnetic-planet-32 - Magnetic Planet 32 at itch.io <br> 
  https://www.frunit.de/qpop/ - Q-Pop fanpage (in German)<br>
  https://qpop.fandom.com/de/wiki/Q-Pop_und_Magnetic_Planet_Wiki - Q-Pop and Magnetic Planet Wiki (in German)
 
